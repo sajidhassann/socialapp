@@ -1,0 +1,46 @@
+version: '3.3'
+
+services:
+  nginx:
+    depends_on:
+      - frontend
+      - backend
+    restart: always
+    build: nginx/
+    ports:
+      - '80:80'
+
+  db:
+    image: mariadb
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: pass
+      MYSQL_DATABASE: app
+      MYSQL_USER: app
+      MYSQL_PASSWORD: pass
+
+  backend:
+    depends_on:
+      - db
+    build: backend/
+    # ports:
+    #   - '6000:5000'
+    restart: always
+    environment:
+      REGISTRATION_DOMAIN: gmail.com
+      SMTP_USER: deanelgertesting@gmail.com
+      SMTP_PASSWORD: jlbfccnfpgclvbsf
+      SMTP_HOST: smtp.gmail.com
+      SMTP_PORT: 465
+
+  frontend:
+    depends_on:
+      - backend
+    build: frontend/
+    # ports:
+    #   - '8100:3000'
+    restart: always
+volumes:
+  db_data:

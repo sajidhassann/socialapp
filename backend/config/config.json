@@ -1,0 +1,30 @@
+{
+  "development": {
+    "username": "app",
+    "password": "pass",
+    "database": "app",
+    "host": "db",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": "pass",
+    "database": "app",
+    "host": "db",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": "pass",
+    "database": "app",
+    "host": "db",
+    "dialect": "mysql"
+  },
+  "current": {
+    "username": "root",
+    "password": "pass",
+    "database": "app",
+    "host": "db",
+    "dialect": "mysql"
+  }
+}

@@ -1,0 +1,1013 @@
+{
+	"info": {
+		"_postman_id": "8cc7291e-04c1-454e-a379-d7d35ca94c7d",
+		"name": "Animal Travel Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Operator",
+			"item": [
+				{
+					"name": "add operator",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Zeeshan\",\r\n    \"surname\":\"Yaseen\",\r\n    \"email\":\"zeeshanyasin1997@gmail.com\",\r\n    \"password\":\"1122\",\r\n    \"contact\":\"090078601\",\r\n    \"admin_id\":1,\r\n    \"role_id\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/operator/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"operator",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find all operators",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/operator/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"operator",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find all operators details",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/operator/details",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"operator",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete operator by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/operator/delete/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"operator",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit operator by id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"surname\":\"Yasin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/operator/edit/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"operator",
+								"edit",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find operator by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/operator/find/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"operator",
+								"find",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update operator general info",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\":\"Jessica\",\r\n    \"surname\":\"Jones\",\r\n    \"email\":\"jessica@yahoo.com\",\r\n    \"contact\":\"1221\",\r\n    \"role_id\":1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/operator/updategeneral/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"operator",
+								"updategeneral",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update operator account info",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/operator/updateaccount/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"operator",
+								"updateaccount",
+								"2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Customer",
+			"item": [
+				{
+					"name": "add customer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Zeeshan\",\r\n    \"surname\": \"Yajson\",\r\n    \"idnumber\": \"3740555755106\",\r\n    \"address1\": \"Sadqabad\",\r\n    \"address2\": \"Kainat Oversees\",\r\n    \"phonehome\": \"5515359\",\r\n    \"phonecell\": \"090078601\",\r\n    \"phonework\": \"5656\",\r\n    \"fax\": \"030121\",\r\n    \"email\": \"zeeshanjson@vela.com\",\r\n    \"password\": \"1122\",\r\n    \"admin_id\": 1,\r\n    \"operator_id\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/customer/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find all customers",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/customer/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "customer details dashboard",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/customer/details",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"details"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete customer by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/customer/delete/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"delete",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit customer by id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"surname\":\"Yasin\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/customer/edit/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"edit",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find customer by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/customer/find/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"find",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update customer general info",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\": \"Zashan\",\r\n    \"surname\": \"Json\",\r\n    \"idnumber\": \"12112\",\r\n    \"address1\": \"SADIKABAAD\",\r\n    \"address2\": \"KAINAAT OVERSEEZ\",\r\n    \"phonehome\": \"1\",\r\n    \"phonecell\": \"2\",\r\n    \"phonework\": \"3\",\r\n    \"fax\": \"4\",\r\n    \"email\": \"zashan@haveli.com\",\r\n    \"operator_id\": \"2\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/customer/updategeneral/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"updategeneral",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update customer account info",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"zashanjson@gmail.com\",\r\n    \"password\":\"ouija\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/customer/updateaccount/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"updateaccount",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Signin",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"zashanjson@gmail.com\",\r\n    \"password\":\"ouija\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/customer/signin",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"customer",
+								"signin"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Role",
+			"item": [
+				{
+					"name": "add role",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oprole\":\"Accounting\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/role/add",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"role",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "show all roles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/role/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"role",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "edit role by id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"oprole\":\"Manager\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/role/edit/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"role",
+								"edit",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "find role by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/role/find/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"role",
+								"find",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete role by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/role/delete/4",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"role",
+								"delete",
+								"4"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Pet",
+			"item": [
+				{
+					"name": "Get All Pets",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Admin Add Pet",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiSm9obiBEb2UiLCJlbWFpbCI6ImpvaG5kb2VAZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkdGFpLi9UQ3lWaGlnVUZhdndZVXNYdU01enNHV3FuT0V6eXFmRU9HWkgvUW91ajJqTGpYVlMifSwiaWF0IjoxNjI0MTAyNzYyfQ.0jOLP7ruP0odgBBStzHsmVeKgFtwPQtR4xy5yCqZMW0",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Kovu",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Lion",
+									"type": "text"
+								},
+								{
+									"key": "breed",
+									"value": "American",
+									"type": "text"
+								},
+								{
+									"key": "colour",
+									"value": "Dark Brown",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Male",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "America",
+									"type": "text"
+								},
+								{
+									"key": "vaccination",
+									"value": "Sinopharm",
+									"type": "text"
+								},
+								{
+									"key": "length",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "height1",
+									"value": "25",
+									"type": "text"
+								},
+								{
+									"key": "height2",
+									"value": "30",
+									"type": "text"
+								},
+								{
+									"key": "width",
+									"value": "40",
+									"type": "text"
+								},
+								{
+									"key": "weight",
+									"value": "50",
+									"type": "text"
+								},
+								{
+									"key": "customer_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "/C:/Users/ZBook/Desktop/b798ed70d081f544ba249d2a236565ab.png"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/pet/adminadd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pet",
+								"adminadd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Add Pet",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozLCJuYW1lIjoiWmVlc2hhbjIiLCJzdXJuYW1lIjoiWWFqc29uMiIsImlkbnVtYmVyIjoiMzc0MDU1NTc1NTEwNiIsImFkZHJlc3MxIjoiU2FkcWFiYWQiLCJhZGRyZXNzMiI6IkthaW5hdCBPdmVyc2VlcyIsInBob21laG9tZSI6bnVsbCwicGhvbmV3b3JrIjoiNTY1NiIsInBob25lY2VsbCI6IjA5MDA3ODYwMSIsImZheCI6IjAzMDEyMSIsImVtYWlsIjoiemVlc2hhbmpzb24yQHZlbGEuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkQXAwOHRjdTBZRy45N0xoRC9zRlg3ZTN1dHU5cnJBM3guUHg5T0xRU0M3bHNjYXI0ci9KeUciLCJhZG1pbl9pZCI6MSwib3BlcmF0b3JfaWQiOjEsInBpY3R1cmUiOm51bGwsImNyZWF0ZWRBdCI6IjIwMjEtMDYtMTVUMTM6NDc6NTMuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjEtMDYtMTVUMTM6NDc6NTMuMDAwWiJ9LCJpYXQiOjE2MjQxMDM5MTJ9.3amrw5RRL0ddLQ6M9Z21sLNxOna_f9q6eHNHVfMjUDY",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Kiara",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Lion",
+									"type": "text"
+								},
+								{
+									"key": "breed",
+									"value": "American",
+									"type": "text"
+								},
+								{
+									"key": "colour",
+									"value": "Dark Brown",
+									"type": "text"
+								},
+								{
+									"key": "sex",
+									"value": "Male",
+									"type": "text"
+								},
+								{
+									"key": "age",
+									"value": "12",
+									"type": "text"
+								},
+								{
+									"key": "country",
+									"value": "America",
+									"type": "text"
+								},
+								{
+									"key": "vaccination",
+									"value": "Sinopharm",
+									"type": "text"
+								},
+								{
+									"key": "length",
+									"value": "10",
+									"type": "text"
+								},
+								{
+									"key": "height1",
+									"value": "25",
+									"type": "text"
+								},
+								{
+									"key": "height2",
+									"value": "30",
+									"type": "text"
+								},
+								{
+									"key": "width",
+									"value": "40",
+									"type": "text"
+								},
+								{
+									"key": "weight",
+									"value": "50",
+									"type": "text"
+								},
+								{
+									"key": "customer_id",
+									"value": "2",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "/C:/Users/ZBook/Desktop/kiara.jpg"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/pet/customeradd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pet",
+								"customeradd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin Update Pet",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiWmFzaGFuIiwic3VybmFtZSI6Ikpzb24iLCJpZG51bWJlciI6IjEyMTEyIiwiYWRkcmVzczEiOiJTQURJS0FCQUFEIiwiYWRkcmVzczIiOiJLQUlOQUFUIE9WRVJTRUVaIiwicGhvbWVob21lIjpudWxsLCJwaG9uZXdvcmsiOiIzIiwicGhvbmVjZWxsIjoiMiIsImZheCI6IjQiLCJlbWFpbCI6Inphc2hhbmpzb25AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkeHlhd0hrU3VFWW4yRk9hdnQ2SXg1ZVFBbjQ2dVBDS3lTUGt0bHpMMy40d0NFOXlIYjJzUkciLCJhZG1pbl9pZCI6MSwib3BlcmF0b3JfaWQiOjIsInBpY3R1cmUiOm51bGwsImNyZWF0ZWRBdCI6IjIwMjEtMDYtMTVUMTA6NDc6MzcuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjEtMDYtMTVUMTI6MDg6MDAuMDAwWiJ9LCJpYXQiOjE2MjM4NTc1Mzd9.EMHQpBYVk0Vx0sAwuJs7F7LEwoZgNvAkWzO4F06ElR4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "picture",
+									"type": "file",
+									"src": "/C:/Users/ZBook/Desktop/mufasa.jpg"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/pet/adminupdate/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pet",
+								"adminupdate",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Customer Update Pet",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/pet/customerupdate/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pet",
+								"customerupdate",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Pet By Customer ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": null
+					},
+					"response": []
+				},
+				{
+					"name": "Get Pet Dashboard",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiWmFzaGFuIiwic3VybmFtZSI6Ikpzb24iLCJpZG51bWJlciI6IjEyMTEyIiwiYWRkcmVzczEiOiJTQURJS0FCQUFEIiwiYWRkcmVzczIiOiJLQUlOQUFUIE9WRVJTRUVaIiwicGhvbWVob21lIjpudWxsLCJwaG9uZXdvcmsiOiIzIiwicGhvbmVjZWxsIjoiMiIsImZheCI6IjQiLCJlbWFpbCI6Inphc2hhbmpzb25AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkeHlhd0hrU3VFWW4yRk9hdnQ2SXg1ZVFBbjQ2dVBDS3lTUGt0bHpMMy40d0NFOXlIYjJzUkciLCJhZG1pbl9pZCI6MSwib3BlcmF0b3JfaWQiOjIsInBpY3R1cmUiOm51bGwsImNyZWF0ZWRBdCI6IjIwMjEtMDYtMTVUMTA6NDc6MzcuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjEtMDYtMTVUMTI6MDg6MDAuMDAwWiJ9LCJpYXQiOjE2MjM4NTc1Mzd9.EMHQpBYVk0Vx0sAwuJs7F7LEwoZgNvAkWzO4F06ElR4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/pet/dashboard",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pet",
+								"dashboard"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "travel task dashboard",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJuYW1lIjoiWmFzaGFuIiwic3VybmFtZSI6Ikpzb24iLCJpZG51bWJlciI6IjEyMTEyIiwiYWRkcmVzczEiOiJTQURJS0FCQUFEIiwiYWRkcmVzczIiOiJLQUlOQUFUIE9WRVJTRUVaIiwicGhvbWVob21lIjpudWxsLCJwaG9uZXdvcmsiOiIzIiwicGhvbmVjZWxsIjoiMiIsImZheCI6IjQiLCJlbWFpbCI6Inphc2hhbmpzb25AZ21haWwuY29tIiwicGFzc3dvcmQiOiIkMmIkMTAkeHlhd0hrU3VFWW4yRk9hdnQ2SXg1ZVFBbjQ2dVBDS3lTUGt0bHpMMy40d0NFOXlIYjJzUkciLCJhZG1pbl9pZCI6MSwib3BlcmF0b3JfaWQiOjIsInBpY3R1cmUiOm51bGwsImNyZWF0ZWRBdCI6IjIwMjEtMDYtMTVUMTA6NDc6MzcuMDAwWiIsInVwZGF0ZWRBdCI6IjIwMjEtMDYtMTVUMTI6MDg6MDAuMDAwWiJ9LCJpYXQiOjE2MjM4NTc1Mzd9.EMHQpBYVk0Vx0sAwuJs7F7LEwoZgNvAkWzO4F06ElR4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/pet/traveltask",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"pet",
+								"traveltask"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Admin Signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"John Doe\",\r\n    \"email\":\"johndoe@gmail.com\",\r\n    \"password\":\"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Admin Sign In",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"johndoe@gmail.com\",\r\n    \"password\":\"12345\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3000/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3000",
+					"path": [
+						"signin"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
